@@ -98,5 +98,5 @@ yelp:
 
 hackerrank:
   name: "Hackerrank"
-  baseUrl: "https://www.hackerrank.com/"
+  baseUrl: "https://www.hackerrank.com/profile/"
   icon: "fa-hackerrank"
