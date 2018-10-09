@@ -1,4 +1,1 @@
----
-layout: page
-title: Insights and musings on solving real world problems with machine learning.
----
+Insights and musings on solving real world problems with machine learning.
