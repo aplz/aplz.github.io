@@ -6,7 +6,7 @@ title: About me
 ### Interests
 
 * Machine Learning
-* [Natural Language Processing](https://github.com/aplz/nlp_notebooks/blob/master/nlp_sandbox.ipynb)
+* [Natural Language Processing](https://github.com/aplz/nlp_notebooks)
 * Information Retrieval
 * [Data Wrangling](https://github.com/aplz/pywine)
 * [Problem solving](https://www.hackerrank.com/profile/apilz)
