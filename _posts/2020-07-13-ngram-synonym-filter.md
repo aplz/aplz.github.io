@@ -1,10 +1,10 @@
 ---
-title: Combining SynonymFilter and NgramFilter in elasticsearch
+title: Combining Synonym and Ngram Filters in elasticsearch
 subtitle: What could possibly go wrong?
 date: "2020-07-13"
 ---
 
-## SynonymFilters & NgramFilters: Combine with caution
+## Combine with caution
 The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) allows us to 
 incorporate known synonyms in order to increase retrieval. However, when combined with an [NGram token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-ngram-tokenfilter.html) you might get some strange results.
 
