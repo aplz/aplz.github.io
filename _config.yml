@@ -23,12 +23,12 @@ title: Anja Pilz
 
 # List of links in the navigation bar
 navbar-links:
+   Home: ""
    About: "aboutme"
 #   Resources:
 #     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
 #     - Learn markdown: "http://www.markdowntutorial.com/"
 #     - GitHub Pages: "https://pages.github.com/"
-#   Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -65,31 +65,19 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Anja Pilz
-
-# Select your active Social Network Links.
-# Uncomment the links you want to show in the footer and add your information to each link.
-# You can reorder the items to define the link order.
-# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
-social-network-links:
-#   rss: true
-#   email: "someone@example.com"
-#   facebook: daattali
   github: aplz
   twitter: anja_pilz
-#  reddit: yourname
-#  google-plus: +DeanAttali
   linkedin: anja-pilz-20327288
-#  xing: Anja_Pilz4
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  hackerrank: apilz
+  
+# Select which links to show in the footer
+footer-links-active:
+  rss: false
+  facebook: false
+  email: false
+  twitter: true
+  github: true
+  linkedin: true
+  stackoverflow: false
 
 # Select which share links to show in posts
 share-links-active:
@@ -109,15 +97,6 @@ share-links-active:
 
 # Google Tag Manager ID
 #gtm: ""
-
-# Matomo (aka Piwik) Web statistics
-# Uncomment the following section to enable Matomo. The opt-out parameter controls
-# whether or not you want to allow users to opt out of tracking.
-
-#matomo:
-#  site_id: "9"
-#  uri: "demo.wiki.pro"
-#  opt-out: true
 
 # --- Misc --- #
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
