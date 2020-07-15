@@ -65,20 +65,16 @@ footer-link-col: "#404040"
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
   name: Anja Pilz
+
+# Select your active Social Network Links.
+# Uncomment the links you want to show in the footer and add your information to each link.
+# You can reorder the items to define the link order.
+# If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
+social-network-links:
   github: aplz
   twitter: anja_pilz
   linkedin: anja-pilz-20327288
   
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: false
-  email: false
-  twitter: true
-  github: true
-  linkedin: true
-  stackoverflow: false
-
 # Select which share links to show in posts
 share-links-active:
   twitter: true
