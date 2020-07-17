@@ -4,20 +4,123 @@ subtitle: What could possibly go wrong?
 date: "2020-07-13"
 ---
 
-## Combine with caution
-The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) allows us to 
-incorporate known synonyms in order to increase retrieval. However, when combined with an [NGram token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-ngram-tokenfilter.html) you might get some strange results.
+## Synonym token filter
+The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) allows us to incorporate known synonyms in order to increase retrieval.
 
-Now, what happens, if the ngram token filter is applied after the synonym filter?
+For instance, we can assume that a user searching for *"new york"* will also want to see results for *"big apple"*.
+So let's assume that a *"new york"* and *"big apple"* can be treated as synonyms.
 
-### Create an example index
+To demonstrate how the synonym token filter works, let's create a tiny index with just one synonym mapping saying that *"big apple"* is the same as *"new york"* (please refer to the [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) for a more thorough description).
+
 ```js
 PUT my_index
 {
   "settings": {
     "analysis": {
       "analyzer": {
-        "text_analyzer": {
+        "synonym_analyzer": {
+          "tokenizer": "standard",
+          "filter": [
+            "synonym_filter"
+          ]
+        }
+      },
+      "filter": {
+        "synonym_filter": {
+          "type": "synonym",
+          "synonyms": [
+            "big apple => new york"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "text",
+        "analyzer": "synonym_analyzer"
+      }
+    }
+  }
+}
+```
+
+We can now use the [analyze API](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-analyze.html) to see what this does.
+```js
+GET my_index/_analyze
+{
+  "text": "big apple",
+  "analyzer": "synonym_analyzer"
+}
+```
+This gives
+```js
+{
+  "tokens" : [
+    {
+      "token" : "new",
+      "start_offset" : 0,
+      "end_offset" : 3,
+      "type" : "SYNONYM",
+      "position" : 0
+    },
+    {
+      "token" : "york",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    }
+  ]
+}
+```
+So, if we now add a document with text *big apple* and search for *new york* we will get that document as result:
+```js
+POST my_index/_doc
+{
+  "text": "big apple"
+}
+
+GET my_index/_search
+{
+  "query": {
+    "match": {
+      "text": "new york"
+    }
+  }
+}
+```
+```js
+...
+"hits" : [
+  {
+    "_index" : "my_index",
+    "_type" : "_doc",
+    "_id" : "5u4RXXMBEQvh_5H7Ia1K",
+    "_score" : 0.5753642,
+    "_source" : {
+      "text" : "big apple"
+    }
+  }
+]
+...
+```
+
+## Combine with Ngram Filter
+If we combine the synonym filter now with an [NGram token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-ngram-tokenfilter.html) you might get some strange results.
+
+Especially, if the ngram token filter is applied **after** the synonym filter.  
+Note: the other way is not allowed, you'll get an `Token filter [ngram_filter] cannot be used to parse synonyms` error.
+
+So let's create our tiny index again, this time with an ngram filter included.
+```js
+PUT my_index
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "synonym_analyzer": {
           "tokenizer": "standard",
           "filter": [
             "synonym_filter",
@@ -34,7 +137,7 @@ PUT my_index
         "synonym_filter": {
           "type": "synonym",
           "synonyms": [
-            "word => longword"
+            "big apple => new york"
           ]
         }
       }
@@ -42,9 +145,9 @@ PUT my_index
   },
   "mappings": {
     "properties": {
-      "ctext": {
+      "text": {
         "type": "text",
-        "analyzer": "text_analyzer",
+        "analyzer": "synonym_analyzer",
         "fields": {
           "keyword": {
             "type": "keyword"
@@ -55,104 +158,186 @@ PUT my_index
   }
 }
 ```
-### Use the analyze API to check the output
+Again, use the analyze API to check the output.
 ```js
 GET my_index/_analyze
 {
-  "text": "long",
-  "field": "ctext" 
+  "text": "big apple",
+  "analyzer": "synonym_analyzer"
 }
 ```
-Result:
+yields
 ```js
 {
   "tokens" : [
     {
-      "token" : "lo",
+      "token" : "ne",
       "start_offset" : 0,
-      "end_offset" : 4,
+      "end_offset" : 3,
+      "type" : "SYNONYM",
+      "position" : 0
+    },
+    {
+      "token" : "new",
+      "start_offset" : 0,
+      "end_offset" : 3,
+      "type" : "SYNONYM",
+      "position" : 0
+    },
+    {
+      "token" : "ew",
+      "start_offset" : 0,
+      "end_offset" : 3,
+      "type" : "SYNONYM",
+      "position" : 0
+    },
+    {
+      "token" : "yo",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    },
+    {
+      "token" : "yor",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    },
+    {
+      "token" : "or",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    },
+    {
+      "token" : "ork",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    },
+    {
+      "token" : "rk",
+      "start_offset" : 4,
+      "end_offset" : 9,
+      "type" : "SYNONYM",
+      "position" : 1
+    }
+  ]
+}
+```
+This will be different if you search only for *"apple"* as then the synonym filter does not apply. It works only for the phrase *"big apple"*:
+```js
+GET my_index/_analyze
+{
+  "text": "apple",
+  "analyzer": "synonym_analyzer"
+}
+```
+yields
+```js
+{
+  "tokens" : [
+    {
+      "token" : "ap",
+      "start_offset" : 0,
+      "end_offset" : 5,
       "type" : "<ALPHANUM>",
       "position" : 0
     },
     {
-      "token" : "lon",
+      "token" : "app",
       "start_offset" : 0,
-      "end_offset" : 4,
+      "end_offset" : 5,
       "type" : "<ALPHANUM>",
       "position" : 0
     },
     {
-      "token" : "on",
+      "token" : "pp",
       "start_offset" : 0,
-      "end_offset" : 4,
+      "end_offset" : 5,
       "type" : "<ALPHANUM>",
       "position" : 0
     },
     {
-      "token" : "ong",
+      "token" : "ppl",
       "start_offset" : 0,
-      "end_offset" : 4,
+      "end_offset" : 5,
       "type" : "<ALPHANUM>",
       "position" : 0
     },
     {
-      "token" : "ng",
+      "token" : "pl",
       "start_offset" : 0,
-      "end_offset" : 4,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "ple",
+      "start_offset" : 0,
+      "end_offset" : 5,
+      "type" : "<ALPHANUM>",
+      "position" : 0
+    },
+    {
+      "token" : "le",
+      "start_offset" : 0,
+      "end_offset" : 5,
       "type" : "<ALPHANUM>",
       "position" : 0
     }
   ]
 }
 ```
-### Add a document
+### Here's where the trouble starts
+Lets add a document
 ```js
 POST my_index/_doc
 {
-  "ctext": "long"
+  "text": "yorkshire"
 }
 ```
-### Search for "word"
+and search for "big apple"
 ```js
 GET my_index/_search
 {
   "query": {
     "match": {
-      "ctext": "word"
+      "text": "big apple"
     }
   }
 }
 ```
-### Surprised?
+Would you want a match here?
 ```js
 {
-  "took" : 1,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "skipped" : 0,
-    "failed" : 0
-  },
+  ...
   "hits" : {
     "total" : {
       "value" : 1,
       "relation" : "eq"
     },
-    "max_score" : 0.57746404,
+    "max_score" : 0.59039235,
     "hits" : [
       {
         "_index" : "my_index",
         "_type" : "_doc",
-        "_id" : "ftZkSHMBSWP7ubXHVybb",
-        "_score" : 0.57746404,
+        "_id" : "5-4fXXMBEQvh_5H7a62y",
+        "_score" : 0.59039235,
         "_source" : {
-          "ctext" : "long"
+          "text" : "yorkshire"
         }
       }
     ]
   }
+  ...
 }
 ```
+To summarize: synonyms are applied on each ngram produced by the ngram filter. So make sure to combine them with caution.
+
 
 
