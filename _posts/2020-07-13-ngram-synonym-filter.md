@@ -16,7 +16,7 @@ So let's assume that a *"new york"* and *"big apple"* can be treated as synonyms
 
 To demonstrate how the synonym token filter works, let's create a tiny index with just one synonym mapping saying that *"big apple"* is the same as *"new york"*.
 
-```js
+```yaml
 PUT my_index
 {
   "settings": {
@@ -59,7 +59,7 @@ GET my_index/_analyze
 }
 ```
 This gives
-```js
+```yaml
 {
   "tokens" : [
     {
@@ -80,7 +80,7 @@ This gives
 }
 ```
 So, if we now add a document with text *big apple* and search for *new york* we will get that document as result:
-```js
+```yaml
 POST my_index/_doc
 {
   "text": "big apple"
@@ -95,7 +95,7 @@ GET my_index/_search
   }
 }
 ```
-```js
+```yaml
 ...
 "hits" : [
   {
@@ -118,7 +118,7 @@ Especially, if the ngram token filter is applied **after** the synonym filter.
 Note: the other way is not allowed, you'll get an `Token filter [ngram_filter] cannot be used to parse synonyms` error.
 
 So let's create our tiny index again, this time with an ngram filter included.
-```js
+```yaml
 PUT my_index
 {
   "settings": {
@@ -163,7 +163,7 @@ PUT my_index
 }
 ```
 Again, use the analyze API to check the output.
-```js
+```yaml
 GET my_index/_analyze
 {
   "text": "big apple",
@@ -171,7 +171,7 @@ GET my_index/_analyze
 }
 ```
 yields
-```js
+```yaml
 {
   "tokens" : [
     {
@@ -234,7 +234,7 @@ yields
 }
 ```
 This will be different if you search only for *"apple"* as then the synonym filter does not apply. It works only for the phrase *"big apple"*:
-```js
+```yaml
 GET my_index/_analyze
 {
   "text": "apple",
@@ -242,7 +242,7 @@ GET my_index/_analyze
 }
 ```
 yields
-```js
+```yaml
 {
   "tokens" : [
     {
@@ -299,14 +299,14 @@ yields
 ```
 ### Here's where the trouble starts
 Lets add a document
-```js
+```yaml
 POST my_index/_doc
 {
   "text": "yorkshire"
 }
 ```
 and search for "big apple"
-```js
+```yaml
 GET my_index/_search
 {
   "query": {
@@ -317,7 +317,7 @@ GET my_index/_search
 }
 ```
 Would you want a match here?
-```js
+```yaml
 {
   ...
   "hits" : {
