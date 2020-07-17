@@ -3,6 +3,10 @@ title: Combining Synonym and Ngram Filters in elasticsearch
 subtitle: What could possibly go wrong?
 date: "2020-07-13"
 ---
+The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) and the [NGram token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-ngram-tokenfilter.html) are two frequently used tools for text analysis with elasticsearch. 
+
+This post is aimed at people already familiar with these concepts and does not provide too many technical explanations. Please refer to the official [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) for a more thorough description. 
+[Here's](https://github.com/aplz/nlp_notebooks/blob/master/elasticsearch-nlp.ipynb) also a notebook giving a high-level demonstration of text analysis with elasticsearch. 
 
 ## Synonym token filter
 The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) allows us to incorporate known synonyms in order to increase retrieval.
@@ -10,7 +14,7 @@ The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/referen
 For instance, we can assume that a user searching for *"new york"* will also want to see results for *"big apple"*.
 So let's assume that a *"new york"* and *"big apple"* can be treated as synonyms.
 
-To demonstrate how the synonym token filter works, let's create a tiny index with just one synonym mapping saying that *"big apple"* is the same as *"new york"* (please refer to the [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) for a more thorough description).
+To demonstrate how the synonym token filter works, let's create a tiny index with just one synonym mapping saying that *"big apple"* is the same as *"new york"*.
 
 ```js
 PUT my_index
