@@ -12,7 +12,7 @@ This post is aimed at people already familiar with these concepts and does not p
 The [Synonym token filter](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) allows us to incorporate known synonyms in order to increase retrieval.
 
 For instance, we can assume that a user searching for *"new york"* will also want to see results for *"big apple"*.
-So let's assume that a *"new york"* and *"big apple"* can be treated as synonyms.
+So let's assume that *"new york"* and *"big apple"* can be treated as synonyms.
 
 To demonstrate how the synonym token filter works, let's create a tiny index with just one synonym mapping saying that *"big apple"* is the same as *"new york"*.
 
