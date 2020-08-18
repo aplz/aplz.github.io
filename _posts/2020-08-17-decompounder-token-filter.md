@@ -3,7 +3,14 @@ title: Demystifying elasticsearch Decompounder Token Filter
 subtitle: Why does longest match not work?
 date: "2020-08-17"
 ---
-The [Dictionary decompounder token filter](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html) is yet another tool for text analysis with elasticsearch that is especially useful for languages like German that tend to create awfully long composita.
+The [Dictionary decompounder token filter](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html) is yet another tool for text analysis with elasticsearch. It is especially useful for Germanic languages that tend to create awfully long composita. 
+
+These are some examples:
+* _press conference_: _Pressekonferenz_
+* _speed limit_: _Geschwindigkeitsbegrenzung_
+* _one-way street_: _Einbahnstrasse_
+
+Check out this [post on duolingo](https://forum.duolingo.com/comment/26620027/Compound-Words-1-Donaudampfschifffahrtsgesellschaft) about compound words for more examples and a nice explanation. 
 
 This post is aimed at people already familiar with this concept and does not provide too many technical explanations. Please refer to the official [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html#analysis-dict-decomp-tokenfilter) for a more thorough description. 
 [Here's](https://github.com/aplz/nlp_notebooks/blob/master/elasticsearch-nlp.ipynb) also a notebook giving a high-level demonstration of text analysis with elasticsearch. 
