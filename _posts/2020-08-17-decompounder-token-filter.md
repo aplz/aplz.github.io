@@ -1,6 +1,6 @@
 ---
-title: Demystifying elasticsearch Decompounder Token Filter
-subtitle: A peak under the hood: what does the longest match setting do?
+title: Demystifying elasticsearch's Decompounder Token Filter
+subtitle: What does the longest match setting do?
 date: "2020-08-17"
 ---
 The [Dictionary decompounder token filter](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html) is yet another tool for text analysis with elasticsearch. It is especially useful for Germanic languages that tend to create awfully long compound words. 
@@ -9,6 +9,7 @@ These are some examples of compound words:
 * _press conference_: _Pressekonferenz_
 * _speed limit_: _Geschwindigkeitsbegrenzung_
 * _one-way street_: _Einbahnstrasse_
+
 You can find a nice explanation of this language characteristic along with more examples in this [duolingo post](https://forum.duolingo.com/comment/26620027/Compound-Words-1-Donaudampfschifffahrtsgesellschaft).
 
 This post here is aimed at people already familiar with this concept and does not provide too many technical explanations. Please refer to the official [elasticsearch docs](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html#analysis-dict-decomp-tokenfilter) for a more thorough description. 
