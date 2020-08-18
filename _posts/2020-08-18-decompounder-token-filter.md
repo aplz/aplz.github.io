@@ -1,7 +1,7 @@
 ---
 title: Demystifying elasticsearch's Decompounder Token Filter
 subtitle: What does the longest match setting do?
-date: "2020-08-17"
+date: "2020-08-18"
 ---
 The [Dictionary decompounder token filter](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/analysis-dict-decomp-tokenfilter.html) is yet another tool for text analysis with elasticsearch. It is especially useful for Germanic languages that tend to create awfully long compound words. 
 
