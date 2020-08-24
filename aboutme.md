@@ -9,6 +9,8 @@ My main passion is in NLP, especially for the German language. I am also interes
 
 ### Talks
 * I was invited to give a talk at my alma mater [Hochschule Koblenz](https://www.hs-koblenz.de/rac/index/) to tell the students (all aspiring data scientists, I hope) a bit about the live of a data scientist and my career path in general. As this was a bit informal, I chose the humorous avenue, so bear with me. [Here are the slides](https://github.com/aplz/aplz.github.io/blob/master/talks/2019_fh_remagen_career.pdf) (in German).  
+* I have a thing for tested code. In an "automated-vs-print-statement" sense. [Here are some motivational slides](https://github.com/aplz/aplz.github.io/blob/master/talks/2020_still_testing.pdf) that unfortunately do not seem to get old. 
+
 
 ### Natural language processing
 * [Caveats in spaCy: A case for overlapping annotations in spacy](https://github.com/aplz/nlp_notebooks/blob/master/spacy_caveats.ipynb)
