@@ -5,7 +5,7 @@ date: "2020-11-13"
 ---
 
 We've already seen some potential pitfalls when using [synonym token filters](https://www.elastic.co/guide/en/elasticsearch/reference/master/analysis-synonym-tokenfilter.html) in the post 
-about [nGram and synonym filters](2020-07-13-ngram-synonym-filter.md). 
+about [nGram and synonym filters](https://aplz.github.io/2020-07-13-ngram-synonym-filter). 
 Another thing to keep in mind when working with synonym filters is *ambiguity*, the problem that a word or even a phrase can have multiple meanings. 
 For instance, the acronym "NL" can refer to the National League in baseball,
 the Netherlands, a [complexity class](https://en.wikipedia.org/wiki/NL_(complexity)) or various [other things](https://en.wikipedia.org/wiki/NL) 
