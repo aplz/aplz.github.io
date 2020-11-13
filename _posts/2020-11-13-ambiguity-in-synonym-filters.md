@@ -1,6 +1,6 @@
 ---
 title: You shall know a word by the company it keeps
-subtitle: ambiguity and synonym filters in elasticsearch
+subtitle: Ambiguity and synonym filters in elasticsearch
 date: "2020-11-13"
 ---
 
