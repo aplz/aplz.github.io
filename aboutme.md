@@ -18,7 +18,7 @@ My main passion is in NLP, especially for the German language. I am also interes
 * [A comparison of TextBlob and spaCy for NLP tasks in German](https://github.com/aplz/nlp_notebooks/blob/master/textblob_vs_spacy.ipynb)
 * [NLP with elasticsearch: A demonstration of tokenization with elasticsearch analyzers](https://github.com/aplz/nlp_notebooks/blob/master/elasticsearch-nlp.ipynb)
 
-### Toy Projects.
+### Toy Projects
 Not to be taken too seriously.
 * [Py Wine](https://github.com/aplz/pywine)
 
