@@ -68,7 +68,7 @@ youtube:
 
 slideshare:
   name: "SlideShare"
-  baseUrl: "https://www.slideshare.net/"
+  baseURL: "https://www.slideshare.net/"
   icon: "fa-slideshare"
   
 spotify:
