@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome!
+title: Hi!
 subtitle: all things data science, machine learning, natural language processing & digital health
 ---
 
