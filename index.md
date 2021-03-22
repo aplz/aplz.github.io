@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi!
+title: Anja Pilz
 subtitle: all things data science, machine learning, natural language processing & digital health
 ---
 
