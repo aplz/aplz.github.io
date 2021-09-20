@@ -20,8 +20,8 @@ My main passion is in NLP, especially for the German language. I am also interes
 * [Caveats in spaCy: A case for overlapping annotations in spacy](https://github.com/aplz/nlp_notebooks/blob/master/spacy_caveats.ipynb)
 * [A comparison of TextBlob and spaCy for NLP tasks in German](https://github.com/aplz/nlp_notebooks/blob/master/textblob_vs_spacy.ipynb)
 * [NLP with elasticsearch: A demonstration of tokenization with elasticsearch analyzers](https://github.com/aplz/nlp_notebooks/blob/master/elasticsearch-nlp.ipynb)
-* Some of my favourite [Natural Language Processing tools](_posts/2018-10-09-nlp-tools.md) 
-* A (hopefully growing) list of resources to get into [Natural Language Processing](_posts/2020-08-27-getting-into-nlp.md)
+* Some of my favourite [NLP tools](_posts/2018-10-09-nlp-tools.md) (oldies but goldies)
+* A (hopefully growing) [list of resources to get started with NLP](_posts/2020-08-27-getting-into-nlp.md)
 
 ### Publications
 A list of my publications can be found at [Google scholar](https://scholar.google.de/citations?hl=de&user=vhQiCP8AAAAJ).
