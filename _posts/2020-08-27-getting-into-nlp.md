@@ -13,3 +13,6 @@ This list is by no means comprehensive.
 
 Misc
 * [awesome-nlp](https://github.com/keon/awesome-nlp): A curated list of resources dedicated to Natural Language Processing
+* [Workshop on Insights from Negative Results in NLP](https://insights-workshop.github.io/index): this is something everyone working in NLP should check out. Benefit from the insights others drew from negative findings, share yours so that others don't need to make the same mistake again.
+
+
