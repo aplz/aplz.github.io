@@ -7,9 +7,10 @@ subtitle: all things data science, machine learning, natural language processing
 ## About me
 I received my PhD in machine learning (ML) and natural language processing (NLP) from the [University of Bonn](https://mlai.cs.uni-bonn.de/) and [Fraunhofer IAIS](https://www.iais.fraunhofer.de/en.html) where I was member of the Text Mining group. Now I work on AI and data driven products, mostly focused on applications in the medical and healthcare domain.
 
-My main passion is in NLP, especially for the German language. I am also interested in information retrieval (IR) and sometimes I build recommender systems.
+My main passion is in NLP, especially for the German language. I am also interested in information retrieval (IR) and sometimes I build Recommender Systems.
 
 ### Talks
+* I was invited to give a talk about Large Language Models and their application to medical data at the [data2health Summerschool](https://www.data2health.de/de/summerschool). I found the book [Foundation Models for Natural Language Processing](https://link.springer.com/book/10.1007/978-3-031-23190-2) by my PhD advisor [Gerd Paaß](https://www.linkedin.com/in/gerhard-paass-20061359/) incredibly helpful for that. 
 * I talked about NLP for medical data with focus on German data and medical controlling at the [ML Conference (online)](https://mlconference.ai/machine-learning-principles/natural-language-processing-for-medical-data/). [Here are the slides](https://www.slideshare.net/AnjaPilz/natural-language-processing-for-medical-data), heavily [damedic](https://www.damedic.ai/en/) branded ;-)
 * I gave a talk about entity linking for biomedical data at the [Hamburg Data Science Meetup](https://www.meetup.com/de-DE/Hamburg-Data-Science-Meetup/), Hamburgs largest data event. [Here are the slides](https://www2.slideshare.net/AnjaPilz/biomedical-entity-linking-introduction-approaches-challenges).
 * I was invited to give a talk at my alma mater [Hochschule Koblenz](https://www.hs-koblenz.de/rac/index/) to tell the students (all aspiring data scientists, I hope) a bit about the life of a data scientist and my career path in general. As this was a bit informal, I chose the humorous avenue, so bear with me. [Here are the slides](https://www.slideshare.net/AnjaPilz/a-career-path-in-data-science) (in German).  
