@@ -19,8 +19,9 @@ Newsletters, blogs, slides, and other useful material
   * ⭐ [stop saying technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) 
 * [**BDD Bias driven development**](https://speakerdeck.com/mariofusco/bdd-bias-driven-development)
 
-## Conferences
+## Conferences and other events
 * [**ACL**](https://2024.aclweb.org)
+* [**Cologne AI and Machine Learning Meetup**](http://caiml.events)
 * [**PyCon & PyData Berlin**](https://2024.pycon.de)
 * [**WOMEN+ IN DATA AND AI**](https://women-in-data-ai.tech), probably the best event I've attented so far ❤️
 
