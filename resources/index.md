@@ -4,7 +4,7 @@ title: Resources
 ---
 Newsletters, blogs, slides, and other useful material
 
-## NLP / AI
+## NLP / AI / IR
 * [**Cassie Kozyrkov**](https://medium.com/@kozyrkov), Machine Learning, Data Science, also Leadership
 * [**Daniel Tunkelang**](https://medium.com/@dtunkelang), Information Retrieval, Search
 * [**Heiko Hotz**](https://medium.com/@heiko-hotz), Generative AI, LLMs, AWS and Google
