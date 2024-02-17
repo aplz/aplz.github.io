@@ -4,24 +4,24 @@ title: Resources
 ---
 Newsletters, blogs, slides, and other useful material
 
-## NLP / AI / IR
-* [**Cassie Kozyrkov**](https://medium.com/@kozyrkov), Machine Learning, Data Science, also Leadership
-* [**Daniel Tunkelang**](https://medium.com/@dtunkelang), Information Retrieval, Search
-* [**Heiko Hotz**](https://medium.com/@heiko-hotz), Generative AI, LLMs, AWS and Google
-* [**Jay Alammar**](https://jalammar.github.io/)
+### NLP / AI / IR
+* [Cassie Kozyrkov](https://medium.com/@kozyrkov), Machine Learning, Data Science, also Leadership
+* [Daniel Tunkelang](https://medium.com/@dtunkelang), Information Retrieval, Search
+* [Heiko Hotz](https://medium.com/@heiko-hotz), Generative AI, LLMs, AWS and Google
+* [Jay Alammar](https://jalammar.github.io/)
   * ⭐ probably most well known for [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)
-* [**Marcus on AI**](https://garymarcus.substack.com/), Gary Marcus' substack
-* [**Sebastian Ruder**](https://www.ruder.io/), NLP, Machine Learning
-* [**Philipp Schmid**](https://www.philschmid.de/), HuggingFace
+* [Marcus on AI](https://garymarcus.substack.com/), Gary Marcus' substack
+* [Sebastian Ruder](https://www.ruder.io/), NLP, Machine Learning
+* [Philipp Schmid](https://www.philschmid.de/), HuggingFace
    
-## Development, Engineering
-* Stack Overflow's newsletter [**The Overflow**](https://stackoverflow.blog/newsletter)
+### Development, Engineering
+* Stack Overflow's newsletter [The Overflow](https://stackoverflow.blog/newsletter)
   * ⭐ [stop saying technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/) 
-* [**BDD Bias driven development**](https://speakerdeck.com/mariofusco/bdd-bias-driven-development)
+* [BDD Bias driven development](https://speakerdeck.com/mariofusco/bdd-bias-driven-development)
 
-## Conferences and other events
-* [**ACL**](https://2024.aclweb.org)
-* [**Cologne AI and Machine Learning Meetup**](http://caiml.events)
-* [**PyCon & PyData Berlin**](https://2024.pycon.de)
-* [**WOMEN+ IN DATA AND AI**](https://women-in-data-ai.tech), probably the best event I've attented so far ❤️
+### Conferences and other events
+* [ACL](https://2024.aclweb.org)
+* [Cologne AI and Machine Learning Meetup](http://caiml.events)
+* [PyCon & PyData Berlin](https://2024.pycon.de)
+* [WOMEN+ IN DATA AND AI](https://women-in-data-ai.tech), probably the best event I've attented so far ❤️
 
