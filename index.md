@@ -21,7 +21,7 @@ My main passion is in NLP, especially for the German language. I am also interes
 
 ### Resources
 
-* I maintain a (somewhat opiniated) [list of resources](blog/index.md), covering blogs, newsletters and social events in the AI and tech ecosphere.
+* I maintain a (somewhat opiniated) [list of resources](resources/index.md), covering blogs, newsletters and social events in the AI and tech ecosphere.
 * [This page](_posts/2020-08-27-getting-into-nlp.md) is more focussed on NLP and contains a (hopefully growing) list of resources to get started in that domain.
 * I love podcasts. Here's my heavily biased list of [aweswome-podcasts](https://github.com/aplz/awesome-podcasts).
 * Last but not least, here are [some rather dusty notebooks on NLP](https://github.com/aplz/nlp_notebooks) (mostly spaCy and elasticsearch related).
