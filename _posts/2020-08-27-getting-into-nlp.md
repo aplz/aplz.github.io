@@ -22,9 +22,9 @@ This list is by no means comprehensive.
 
 ### Conferences
 
-* [Workshop on Insights from Negative Results in NLP](https://insights-workshop.github.io/index): this is something everyone working in NLP should check out. Benefit from the insights others drew from negative findings, share yours so that others don't need to make the same mistake again.
 * [ACL - Association for Computational Linguistics](https://2024.aclweb.org)
-* [EACL - European Chapter of the ACL](https://eacl.org)
 * [BioNLP](https://aclweb.org/aclwiki/BioNLP_Workshop), NLP and NLU in the biological and medical domain
-* [EMNLP - Empirical Methods in Natural Language Processing](https://2023.emnlp.org)
 * [COLING - Conference on Computational Linguistics](https://lrec-coling-2024.org). This year together with LREC (Language Resources and Evaluation).
+* [EACL - European Chapter of the ACL](https://eacl.org)
+* [EMNLP - Empirical Methods in Natural Language Processing](https://2023.emnlp.org)
+* [Workshop on Insights from Negative Results in NLP](https://insights-workshop.github.io/index): this is something everyone working in NLP should check out. Benefit from the insights others drew from negative findings, share yours so that others don't need to make the same mistake again.
