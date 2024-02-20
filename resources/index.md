@@ -6,7 +6,7 @@ Newsletters, blogs, slides, and other useful material
 
 ### NLP / ML / AI / IR
 
-For getting into Natural Language Processing, here's a [list of academic resources, code and conferences worth checking out](_posts/2020-08-27-getting-into-nlp.md).
+For getting into Natural Language Processing, here's a [list of academic resources, code and conferences worth checking out](2020-08-27-getting-into-nlp.md).
 
 For ~~bleeding edge~~ recent, state of the art content, also refer ot the authors below.
 
