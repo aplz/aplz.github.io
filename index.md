@@ -8,7 +8,7 @@ subtitle: all things data science, machine learning, natural language processing
 
 I received my PhD in Machine Learning (ML) and Natural Language Processing (NLP) from the [University of Bonn](https://mlai.cs.uni-bonn.de/) and [Fraunhofer IAIS](https://www.iais.fraunhofer.de/en.html) where I was member of the Text Mining group. Now I work on AI and data driven products, mostly focused on applications in the medical and healthcare domain.
 
-My main passion is in NLP, especially for the German language. I am also interested in Information Retrieval (IR) and sometimes I build Recommender Systems.
+My main passion is in NLP, especially for the German language, and Information Retrieval (IR). Sometimes I build Recommender Systems.
 
 ### Talks
 
@@ -24,7 +24,7 @@ My main passion is in NLP, especially for the German language. I am also interes
 * I maintain a (somewhat opiniated) [list of resources](resources/index.md), covering blogs, newsletters and social events in the AI and tech ecosphere.
 * [This page](_posts/2020-08-27-getting-into-nlp.md) is more focussed on NLP and contains a (hopefully growing) list of resources to get started in that domain.
 * I love podcasts. Here's my heavily biased list of [aweswome-podcasts](https://github.com/aplz/awesome-podcasts).
-* Last but not least, here are [some rather dusty notebooks on NLP](https://github.com/aplz/nlp_notebooks) (mostly spaCy and elasticsearch related).
+* Last but not least, here are [some rather dusty notebooks on NLP](https://github.com/aplz/nlp_notebooks) (mostly [spaCy](https://spacy.io/) and [elasticsearch](https://www.elastic.co/de/elasticsearch) related).
 
 ### Publications
 
