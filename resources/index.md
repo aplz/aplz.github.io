@@ -8,7 +8,7 @@ Newsletters, blogs, slides, and other useful material
 
 For getting into Natural Language Processing, here's a [list of academic resources, code and conferences worth checking out](../_posts/2020-08-27-getting-into-nlp.md).
 
-For ~~bleeding edge~~ recent, state of the art content, also refer ot the authors below.
+For ~~bleeding edge~~ recent, state of the art content, also refer to the authors below.
 
 * [Cassie Kozyrkov](https://medium.com/@kozyrkov), Machine Learning, Data Science, also Leadership
 * [Daniel Tunkelang](https://medium.com/@dtunkelang), Information Retrieval, Search
