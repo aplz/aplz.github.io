@@ -28,4 +28,4 @@ My main passion is in NLP, especially for the German language, and Information R
 
 ### Publications
 
-A list of my publications can be found at [Google scholar](https://scholar.google.de/citations?hl=de&user=vhQiCP8AAAAJ).
+You can find my publications at [Google scholar](https://scholar.google.de/citations?hl=de&user=vhQiCP8AAAAJ).
