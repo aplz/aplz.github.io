@@ -24,7 +24,7 @@ reddit:
 google-scholar:
   name: "Google Scholar"
   baseURL: "https://scholar.google.com/citations?hl=de&user="
-  icon: "fa-google-scholar"
+  icon: "fa-google-scholar text-light"
 
 email:
   name: "Email me"
