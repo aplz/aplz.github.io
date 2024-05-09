@@ -21,10 +21,10 @@ reddit:
   baseURL: "https://reddit.com/u/"
   icon: "fa-reddit"
 
-google-scholar:
+googlescholar:
   name: "Google Scholar"
   baseURL: "https://scholar.google.com/citations?hl=de&user="
-  icon: "fa-google-scholar text-light"
+  icon: "fa-google-scholar"
 
 email:
   name: "Email me"
