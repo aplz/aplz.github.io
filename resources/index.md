@@ -10,6 +10,7 @@ For getting into Natural Language Processing, here's a [list of academic resourc
 
 For ~~bleeding edge~~ recent, state of the art content, also refer to the authors below.
 
+* [Ahead of AI](https://magazine.sebastianraschka.com) by Sebastian Raschka, especially the hands-on material on [Large Language Models from Scratch](https://github.com/rasbt/LLMs-from-scratch)
 * [Cassie Kozyrkov](https://medium.com/@kozyrkov), Machine Learning, Data Science, also Leadership
 * [Daniel Tunkelang](https://medium.com/@dtunkelang), Information Retrieval, Search
 * [Heiko Hotz](https://medium.com/@heiko-hotz), Generative AI, LLMs, AWS and Google
@@ -18,6 +19,7 @@ For ~~bleeding edge~~ recent, state of the art content, also refer to the author
 * [Marcus on AI](https://garymarcus.substack.com/), Gary Marcus' substack
 * [Philipp Schmid](https://www.philschmid.de/), HuggingFace
 * [Sebastian Ruder](https://www.ruder.io/), NLP, Machine Learning
+
 
 
 ### Development, Engineering
