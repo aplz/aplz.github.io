@@ -24,6 +24,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
+  color: #cad3f5;
 }
 a {
   color: {{ site.link-col }};
@@ -345,7 +346,7 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #808080;
+  color: #b7bdf8;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
@@ -376,7 +377,8 @@ footer .theme-by {
   width: 192px;
 }
 .post-preview .post-read-more {
-  font-weight: 800;
+  font-weight: 400;
+  color: #b7bdf8;
 }
 
 @media only screen and (min-width: 768px) {
