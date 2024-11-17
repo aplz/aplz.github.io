@@ -64,7 +64,7 @@ POST my_index/_doc
 Note that the mention of "NL" is disambiguated through the context and rather obviously hints at the National League. 
 
 But, searching for "Netherlands"
-```
+```js
 GET my_index/_search
 {
   "query": {
