@@ -9,7 +9,7 @@ layout: null
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 18px;
-  color: #cad3f5;
+  color: {{ site.text-col }};
   position: relative;
   background-color: {{ site.page-col }};
   {% if site.page-img %}
@@ -24,7 +24,7 @@ p {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
-  color: #cad3f5;
+  color: {{site.text-col}};
 }
 a {
   color: {{ site.link-col }};
@@ -34,7 +34,7 @@ a:focus {
   color: {{ site.hover-col }};
 }
 blockquote {
-  color: #b8c0e0;
+  color: {{site.subtext1-col}};
   font-style: italic;
 }
 blockquote p:first-child {
@@ -44,7 +44,7 @@ hr.small {
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: #b7bdf8;
+  border-color:  {{site.lavender-col}};
   border-radius: 3px;
 }
 
@@ -263,7 +263,7 @@ img {
 
 footer {
   padding: 30px 0;
-  border-top: 1px #b7bdf8 solid;
+  border-top: 1px  {{site.lavender-col}} solid;
   margin-top: 50px;
   font-size: 14px;
   background-color: {{ site.footer-col }};
@@ -346,7 +346,7 @@ footer .theme-by {
 }
 .post-preview .post-meta,
 .post-heading .post-meta {
-  color: #b7bdf8;
+  color: {{site.lavender-col}};
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
@@ -378,7 +378,7 @@ footer .theme-by {
 }
 .post-preview .post-read-more {
   font-weight: 400;
-  color: #b7bdf8;
+  color:  {{site.lavender-col}};
 }
 
 @media only screen and (min-width: 768px) {
@@ -774,3 +774,4 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+

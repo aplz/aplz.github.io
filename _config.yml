@@ -39,6 +39,11 @@ navbar-children-col: "#c6a0f6"
 page-col: "#24273a"
 link-col: "#c6a0f6"
 hover-col: "#8aadf4" #0085A1"
+# color scheme from https://github.com/catppuccin/catppuccin?tab=readme-ov-file 
+text-col: "#cad3f5"
+subtext1-col: "#b8c0e0"
+lavender-col: "#b7bdf8"
+
 #footer-col: "#24273a"
 #footer-text-col: "#777777"
 #footer-link-col: "#b7bdf8"
