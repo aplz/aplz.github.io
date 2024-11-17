@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Anja Pilz
-subtitle: all things data science, machine learning, natural language processing & digital health
+subtitle: All things Data Science, Machine Learning, Natural Language Processing & Search
 ---
 
 ## About me
