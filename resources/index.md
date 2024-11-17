@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Resources
+subtitle: Newsletters, blogs, slides, and other useful material
 ---
-Newsletters, blogs, slides, and other useful material
 
 ### NLP / ML / AI / IR
 
