@@ -44,6 +44,9 @@ text-col: "#cad3f5"
 subtext1-col: "#b8c0e0"
 lavender-col: "#b7bdf8"
 
+text-font: Lora
+header-font: Open Sans
+
 #footer-col: "#24273a"
 #footer-text-col: "#777777"
 #footer-link-col: "#b7bdf8"
