@@ -14,16 +14,13 @@ subtitle: newsletters, blogs, slides, and other useful things
 ### Engineering, Development
 
 * [ThoughtWorks Tech Radar](https://www.thoughtworks.com/en-de/radar): go-to resource for the assessment of all things tech (and AI) based on the trusted, hands-on experience of ThoughtWorkers
-* [The Pragmattic Engineer](https://newsletter.pragmaticengineer.com)
-* [BDD Bias driven development](https://speakerdeck.com/mariofusco/bdd-bias-driven-development)
+* [The Pragmattic Engineer](https://newsletter.pragmaticengineer.com), all things engineering
 * [The Overflow](https://stackoverflow.blog/newsletter), Stack Overflow's newsletter
   * ⭐ [stop saying technical debt](https://stackoverflow.blog/2023/12/27/stop-saying-technical-debt/)
 
 ### NLP / ML / AI / IR
 
-For getting into NLP, here's a [list of academic resources, code and conferences worth checking out](../_posts/2020-08-27-getting-into-nlp.md).
-
-For ~~bleeding edge~~ recent, state of the art content, also refer to the authors below.
+For getting into NLP, here's a [list of academic resources, code and conferences worth checking out](../_posts/2020-08-27-getting-into-nlp.md). For ~~bleeding edge~~ recent, state of the art content, also refer to the authors below.
 
 * [Alpha Signal](https://alphasignal.ai), daily technical newsletter in AI, there is a gazillion of updates - this is the most effective one to me
 * [Ahead of AI](https://magazine.sebastianraschka.com) by Sebastian Raschka, especially the hands-on material on [Large Language Models from Scratch](https://github.com/rasbt/LLMs-from-scratch)
@@ -36,8 +33,9 @@ For ~~bleeding edge~~ recent, state of the art content, also refer to the author
 * [Philipp Schmid](https://www.philschmid.de/), HuggingFace
 * [Sebastian Ruder](https://www.ruder.io/), NLP, Machine Learning
 
-### Conferences and other events
+### Socializing
 
 * [Cologne AI and Machine Learning Meetup](http://caiml.events)
 * [PyCon DE & PyData](https://2024.pycon.de). I have the honour to be on the programm committee in [2024](https://2024.pycon.de) and [2025](https://2025.pycon.de) 😄
+* [Women Wired for Tech](https://www.inovex.de/de/news-events/events/women-wired-for-tech-1-das-online-event-fuer-frauen-in-der-tech-welt/), among inovex' great events, this one is special, you'll find allies
 * [WOMEN+ IN DATA AND AI](https://women-in-data-ai.tech), probably the best event I've attented so far ❤️
